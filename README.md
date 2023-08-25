@@ -8,7 +8,7 @@ This is just toast!
     showToast(context: context, text: 'toast message');
 
 ```
-## custom
+- custom
 
 ```
     showToast(
