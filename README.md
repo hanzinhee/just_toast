@@ -1,6 +1,6 @@
 # Just Toast
 
-This is just toast!
+This is just toast for flutter!
 
 # Usage
 
