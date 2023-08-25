@@ -1,7 +1,7 @@
 name: just_toast
-description: A new Flutter package project.
+description: This is just toast for flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/hanzinhee/just_toast
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
