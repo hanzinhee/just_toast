@@ -4,13 +4,12 @@ This is just toast for flutter!
 
 # Usage
 
-```
+```dart
     showToast(context: context, text: 'toast message');
-
 ```
 - custom
 
-```
+```dart
     showToast(
       context: context,
       text: 'Custom Toast message',
