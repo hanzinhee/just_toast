@@ -38,7 +38,7 @@ class _ToastState extends State<Toast> with SingleTickerProviderStateMixin {
         duration: forwardDuration,
         reverseDuration: reverseDuration);
     _animationForSlide =
-        Tween<Offset>(begin: Offset.zero, end: const Offset(0.0, -.2)).animate(
+        Tween<Offset>(begin: Offset.zero, end: const Offset(0.0, -.1)).animate(
             CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn));
     _animationForFade = Tween(begin: 0.0, end: 1.0).animate(
         CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn));
