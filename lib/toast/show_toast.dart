@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:just_toast/toast/constant.dart';
-import 'package:just_toast/toast/overlay.dart';
 import 'package:just_toast/toast/toast.dart';
 
 void showToast({
@@ -13,8 +12,7 @@ void showToast({
   color = Colors.black45,
   textStyle = const TextStyle(color: Colors.white),
 }) async {
-  if (overlay != null) return;
-  overlay = OverlayEntry(
+  final overlayEntry = OverlayEntry(
       builder: (_) => Toast(
             text: text,
             duration: duration,
@@ -25,8 +23,7 @@ void showToast({
             textStyle: textStyle,
           ));
 
-  Navigator.of(context).overlay!.insert(overlay!);
+  Navigator.of(context).overlay!.insert(overlayEntry);
   await Future.delayed(duration + forwardDuration + reverseDuration);
-  overlay!.remove();
-  overlay = null;
+  overlayEntry.remove();
 }
